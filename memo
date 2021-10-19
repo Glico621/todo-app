@@ -1,0 +1,28 @@
+#仕様
+flask
+flask-sqlalchemy(バージョンを1.3.20にダウン)
+sqlite:///todo.db
+
+#フロント
+Bootstrap
+
+#アプリ公開
+gunicorn
+heroku CLI
+
+#仮想環境の作成
+virtualenv env
+
+#仮想環境の有効化
+env\Scripts\activate
+
+#公開手順
+pip freeze > requrements.txt
+↓
+Procfile の作成
+    web: gunicorn app:app --log-file=- と記入
+
+#base.htmlの内容を，indx.htmlに継承する
+    {% block head %}{% endblock %}
+    {% block body %}{% endblock %}
+
