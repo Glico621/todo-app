@@ -23,6 +23,9 @@ Procfile の作成
     web: gunicorn app:app --log-file=- と記入
 
 heroku login
+heroku create
+heroku リポジトリにぶち込む
+
 
 #base.htmlの内容を，indx.htmlに継承する
     {% block head %}{% endblock %}
