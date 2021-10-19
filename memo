@@ -17,10 +17,12 @@ virtualenv env
 env\Scripts\activate
 
 #公開手順
-pip freeze > requrements.txt
+pip freeze > requirements.txt
 ↓
 Procfile の作成
     web: gunicorn app:app --log-file=- と記入
+
+heroku login
 
 #base.htmlの内容を，indx.htmlに継承する
     {% block head %}{% endblock %}
